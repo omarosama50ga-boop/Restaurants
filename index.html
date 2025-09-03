@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم فليفرز | أشهى المأكولات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">FLAVORS <i class="fas fa-utensils"></i></a>
+            <nav>
+                <a href="#dishes">المأكولات</a>
+                <a href="#addons">الإضافات</a>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-basket"></i>
+                <span class="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="dishes" class="product-section">
+            <h2 class="section-title">المأكولات</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-name="كلاسيك بيف برجر" data-price="150" data-image="https://i.ibb.co/L60S92w/burger1.jpg">
+                    <div class="product-image"><img src="https://i.ibb.co/L60S92w/burger1.jpg" alt="برجر"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">كلاسيك بيف برجر</h3>
+                        <p class="product-description">لحم بقري، خس، طماطم، صوص فليفرز الخاص</p>
+                        <p class="product-price">150 جنيه</p>
+                        <button class="add-to-cart-btn">أضف للطلب</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="2" data-name="بيتزا بيبروني" data-price="220" data-image="https://i.ibb.co/fHwz3zN/pizza2.jpg">
+                    <div class="product-image"><img src="https://i.ibb.co/fHwz3zN/pizza2.jpg" alt="بيتزا"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">بيتزا بيبروني</h3>
+                        <p class="product-description">شرائح بيبروني، جبنة، فلفل أخضر</p>
+                        <p class="product-price">220 جنيه</p>
+                        <button class="add-to-cart-btn">أضف للطلب</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="addons" class="product-section">
+            <h2 class="section-title">الإضافات</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="21" data-name="بطاطس ودجز" data-price="60" data-image="https://i.ibb.co/d2x2Jk6/appetizer1.jpg">
+                    <div class="product-image"><img src="https://i.ibb.co/d2x2Jk6/appetizer1.jpg" alt="بطاطس"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">بطاطس ودجز</h3>
+                        <p class="product-description">بطاطس مقلية مع بهارات خاصة</p>
+                        <p class="product-price">60 جنيه</p>
+                        <button class="add-to-cart-btn">أضف للطلب</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="31" data-name="مشروب غازي" data-price="25" data-image="https://i.ibb.co/QjGgCjD/drink1.jpg">
+                    <div class="product-image"><img src="https://i.ibb.co/QjGgCjD/drink1.jpg" alt="مشروب"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">مشروب غازي</h3>
+                        <p class="product-description">اختر النوع المفضل لديك</p>
+                        <p class="product-price">25 جنيه</p>
+                        <button class="add-to-cart-btn">أضف للطلب</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-sidebar">
+        <div class="cart-header"><h3>سلة الطلبات</h3><button class="close-cart-btn">&times;</button></div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="total-price">الإجمالي: 0 جنيه</div>
+            <button class="checkout-btn" disabled>إتمام الطلب</button>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal-btn">&times;</span>
+            <h2>بيانات الطلب</h2>
+            <form id="checkout-form">
+                <div class="form-group"><label for="name">الاسم</label><input type="text" id="name" required></div>
+                <div class="form-group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" required></div>
+                <div class="form-group">
+                    <label>طريقة الاستلام</label>
+                    <div class="delivery-options">
+                        <input type="radio" id="delivery" name="delivery_option" value="توصيل للمنزل" checked>
+                        <label for="delivery">توصيل للمنزل</label>
+                        <input type="radio" id="takeaway" name="delivery_option" value="استلام من الفرع">
+                        <label for="takeaway">استلام من الفرع</label>
+                    </div>
+                </div>
+                <div class="form-group" id="address-group">
+                    <label for="address">العنوان بالتفصيل</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">ملاحظات على الطلب (اختياري )</label>
+                    <textarea id="notes" placeholder="مثال: بدون بصل، زيادة صوص..."></textarea>
+                </div>
+                <div class="final-total">الإجمالي النهائي: <span id="modal-total-price">0 جنيه</span></div>
+                <button type="submit" class="confirm-order-btn">إرسال الطلب عبر واتساب</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <script src="main.js"></script>
+</body>
+</html>
