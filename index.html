@@ -2,13 +2,20 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- =================================================================== -->
+    <!-- ==== هذا هو السطر الوحيد الذي تم تغييره ليحل المشكلة ==== -->
+    <meta name="viewport" content="width=1200">
+    <!-- =================================================================== -->
+
     <title>مطعم فليفرز | أشهى المأكولات</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- باقي الكود يبقى كما هو بدون أي تغيير -->
 
     <header>
         <div class="container">
@@ -74,6 +81,18 @@
         </section>
     </main>
 
+    <footer>
+        <div class="container">
+            <p>تابعنا على مواقع التواصل الاجتماعي</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 جميع الحقوق محفوظة لمطعم فليفرز.</p>
+        </div>
+    </footer>
+
     <div class="cart-sidebar">
         <div class="cart-header"><h3>سلة الطلبات</h3><button class="close-cart-btn">&times;</button></div>
         <div class="cart-items"></div>
@@ -104,7 +123,7 @@
                     <input type="text" id="address" required>
                 </div>
                 <div class="form-group">
-                    <label for="notes">ملاحظات على الطلب (اختياري )</label>
+                    <label for="notes">ملاحظات على الطلب (اختياري  )</label>
                     <textarea id="notes" placeholder="مثال: بدون بصل، زيادة صوص..."></textarea>
                 </div>
                 <div class="final-total">الإجمالي النهائي: <span id="modal-total-price">0 جنيه</span></div>

@@ -119,7 +119,7 @@ ${productsText}
 `;
 
         const ownerPhoneNumber = "201143708997"; // <-- ضع رقمك هنا
-        const whatsappURL = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(fullMessage )}`;
+        const whatsappURL = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(fullMessage  )}`;
         window.open(whatsappURL, '_blank');
 
         setTimeout(() => {
