@@ -132,6 +132,7 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
+
 }
 
 .product-card:hover {
