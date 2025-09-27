@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     
-    <!-- =================================================================== -->
-    <!-- ==== هذا هو السطر الوحيد الذي تم تغييره ليحل المشكلة ==== -->
-    <meta name="viewport" content="width=700">
-    <!-- =================================================================== -->
-
+    <!-- ==== تصحيح viewport لجعل الموقع متجاوباً ==== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>مطعم فليفرز | أشهى المأكولات</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- باقي الكود يبقى كما هو بدون أي تغيير -->
-
     <header>
         <div class="container">
-            <a href="#" class="logo">FLAVORS <i class="fas fa-utensils"></i></a>
+            <a href="#" class="logo"><i class="fas fa-utensils"></i> FLAVORS</a>
             <nav>
                 <a href="#dishes">المأكولات</a>
                 <a href="#addons">الإضافات</a>
@@ -41,39 +37,37 @@
                         <h3 class="product-name">كلاسيك بيف برجر</h3>
                         <p class="product-description">لحم بقري، خس، طماطم، صوص فليفرز الخاص</p>
                         <p class="product-price">150 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
-                <div class="product-card" data-id="2" data-name="بيتزا بيبروني" data-price="300" data-image="https://i.pinimg.com/474x/f2/58/5e/f2585efc05e82e05faa53e1eba5a3a75.jpg">
+                <div class="product-card" data-id="2" data-name="البورجر العملاق" data-price="300" data-image="https://i.pinimg.com/474x/f2/58/5e/f2585efc05e82e05faa53e1eba5a3a75.jpg">
                     <div class="product-image"><img src="https://i.pinimg.com/474x/f2/58/5e/f2585efc05e82e05faa53e1eba5a3a75.jpg" alt="بيتزا"></div>
                     <div class="product-info">
-                        <h3 class="product-name">  البورجر العملاق   </h3>
-                        <p class="product-description">شرائح   و لحم و جبنة، فلفل أخضر</p>
+                        <h3 class="product-name">البورجر العملاق</h3>
+                        <p class="product-description">شرائح لحم وجبنة، فلفل أخضر</p>
                         <p class="product-price">300 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
 
-                <div class="product-card" data-id="3" data-name="    2 برجر لحم و فراخ   " data-price="300" data-image="https://images.taker.io/burger_site/1692180006_sN7Gng.jpg">
-                    <div class="product-image"><img src="https://images.taker.io/burger_site/1692180006_sN7Gng.jpg" alt=" 2 برجر لحم و فراخ "></div>
+                <div class="product-card" data-id="3" data-name="2 برجر لحم وفراخ" data-price="300" data-image="https://images.taker.io/burger_site/1692180006_sN7Gng.jpg">
+                    <div class="product-image"><img src="https://images.taker.io/burger_site/1692180006_sN7Gng.jpg" alt="2 برجر لحم و فراخ"></div>
                     <div class="product-info">
-                        <h3 class="product-name">    </h3>
-                        <p class="product-description">  و صوصات   و لحم و جبنة، فلفل أخضر</p>
+                        <h3 class="product-name">2 برجر لحم وفراخ</h3>
+                        <p class="product-description">صوصات خاصة، لحم وجبنة، فلفل أخضر</p>
                         <p class="product-price">300 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
-
                 </div>
-                <div class="product-card" data-id="4" data-name="   سلة  البرجر   " data-price="1000" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7chNIHCnbuD8NvxW7KandVDhKS6Bdgk67xQ&s">
-                    <div class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7chNIHCnbuD8NvxW7KandVDhKS6Bdgk67xQ&s" alt=""></div>
+                <div class="product-card" data-id="4" data-name="سلة البرجر" data-price="1000" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7chNIHCnbuD8NvxW7KandVDhKS6Bdgk67xQ&s">
+                    <div class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7chNIHCnbuD8NvxW7KandVDhKS6Bdgk67xQ&s" alt="سلة البرجر"></div>
                     <div class="product-info">
-                        <h3 class="product-name">   سلة  البرجر   </h3>
-                        <p class="product-description">شرائح   و لحم و جبنة، فلفل أخضر</p>
+                        <h3 class="product-name">سلة البرجر</h3>
+                        <p class="product-description">تشكيلة متنوعة من البرجر بأنواع مختلفة</p>
                         <p class="product-price">1000 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
-
             </div>
         </section>
         
@@ -86,7 +80,7 @@
                         <h3 class="product-name">بطاطس ودجز</h3>
                         <p class="product-description">بطاطس مقلية مع بهارات خاصة</p>
                         <p class="product-price">60 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
                 <div class="product-card" data-id="32" data-name="مشروب غازي" data-price="25" data-image="https://media.istockphoto.com/id/458464735/photo/coke.jpg?s=612x612&w=0&k=20&c=YbmiazMmY0DkWh_W8T0pBkOgai2k62hGF1TJn9EC5W0=">
@@ -95,25 +89,25 @@
                         <h3 class="product-name">مشروب غازي</h3>
                         <p class="product-description">اختر النوع المفضل لديك</p>
                         <p class="product-price">25 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
-                <div class="product-card" data-id="33" data-name="    1 مجموعت صوصات   " data-price="100" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY21U-zDxkEApwtGcjJGMwkBGI9mH9dDjDRg&s">
-                    <div class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY21U-zDxkEApwtGcjJGMwkBGI9mH9dDjDRg&s" alt=""></div>
+                <div class="product-card" data-id="33" data-name="1 مجموعة صوصات" data-price="100" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY21U-zDxkEApwtGcjJGMwkBGI9mH9dDjDRg&s">
+                    <div class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY21U-zDxkEApwtGcjJGMwkBGI9mH9dDjDRg&s" alt="1 مجموعة صوصات"></div>
                     <div class="product-info">
-                        <h3 class="product-name">  1 مجموعت صوصات   </h3>
+                        <h3 class="product-name">1 مجموعة صوصات</h3>
                         <p class="product-description">اختر النوع المفضل لديك</p>
                         <p class="product-price">100 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
-                <div class="product-card" data-id="34" data-name="  مجموعه صوصات    " data-price="65" data-image="https://media-cdn.tripadvisor.com/media/photo-s/1a/15/0f/d2/7-original-tartar-bbq.jpg">
-                    <div class="product-image"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/15/0f/d2/7-original-tartar-bbq.jpg" alt="مشروب"></div>
+                <div class="product-card" data-id="34" data-name="مجموعة صوصات" data-price="65" data-image="https://media-cdn.tripadvisor.com/media/photo-s/1a/15/0f/d2/7-original-tartar-bbq.jpg">
+                    <div class="product-image"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/15/0f/d2/7-original-tartar-bbq.jpg" alt="مجموعة صوصات"></div>
                     <div class="product-info">
-                        <h3 class="product-name"> مجموعه صوصات   </h3>
+                        <h3 class="product-name">مجموعة صوصات</h3>
                         <p class="product-description">اختر النوع المفضل لديك</p>
                         <p class="product-price">65 جنيه</p>
-                        <button class="add-to-cart-btn">أضف للطلب</button>
+                        <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> أضف للطلب</button>
                     </div>
                 </div>
             </div>
@@ -137,7 +131,7 @@
         <div class="cart-items"></div>
         <div class="cart-footer">
             <div class="total-price">الإجمالي: 0 جنيه</div>
-            <button class="checkout-btn" disabled>إتمام الطلب</button>
+            <button class="checkout-btn" disabled><i class="fas fa-shopping-bag"></i> إتمام الطلب</button>
         </div>
     </div>
 
@@ -162,16 +156,16 @@
                     <input type="text" id="address" required>
                 </div>
                 <div class="form-group">
-                    <label for="notes">ملاحظات على الطلب (اختياري  )</label>
+                    <label for="notes">ملاحظات على الطلب (اختياري)</label>
                     <textarea id="notes" placeholder="مثال: بدون بصل، زيادة صوص..."></textarea>
                 </div>
                 <div class="final-total">الإجمالي النهائي: <span id="modal-total-price">0 جنيه</span></div>
-                <button type="submit" class="confirm-order-btn">إرسال الطلب عبر واتساب</button>
+                <button type="submit" class="confirm-order-btn"><i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب</button>
             </form>
         </div>
     </div>
 
     <div class="overlay"></div>
-    <script src="main.js"></script>
+ <script src="main.js"></script>
 </body>
 </html>
